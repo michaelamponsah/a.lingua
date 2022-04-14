@@ -1,8 +1,10 @@
+// import Container from 'react-bootstrap/Container';
+
 import Homepage from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Homepage />
     </div>
   );

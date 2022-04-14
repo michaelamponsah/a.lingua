@@ -1,0 +1,85 @@
+/* Hero Section */
+.hero-section-wrapper {
+  min-width: 100%;
+  min-height: 100vh;
+  margin-top: 24px;
+}
+.hero-section-main,
+.section-row,
+.left-side {
+  min-width: 100%;
+  height: 100vh;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+.left-side > h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  color: #1434a4;
+}
+.left-side > p {
+  font-size: 32px;
+  color: #1d262d;
+  font-weight: bold;
+  line-height: 2.2rem;
+}
+.btn-wrapper {
+  margin-top: 16px;
+}
+.right-side {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+.right-side img {
+  width: 400px;
+  height: 470px;
+}
+
+/* Second Section */
+.second-section {
+  height: 40vh;
+  max-width: 100%;
+  background-color: #ebf5fb;
+  opacity: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-text-wrapper {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-text-wrapper > p {
+  text-align: center;
+  align-self: center;
+  font-size: 32px;
+}
+
+/* Third section */
+.third-section {
+  max-width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.third-section .leading-text {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 5rem;
+}
+.third-section .leading-text p {
+  text-align: center;
+  align-self: center;
+  font-size: 32px;
+  color: #007675;
+}

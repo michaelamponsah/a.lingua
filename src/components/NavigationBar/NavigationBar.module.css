@@ -1,17 +1,16 @@
-.navigation-wrapper {
+.wrapper {
+  min-width: 100%;
   height: 80px;
   background-color: #ffffff;
-  width: 100%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+.navigation-items {
+  min-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.logo-wrapper {
-  margin-left: 20px;
-}
-.button-wrapper {
-  margin-right: 20px;
 }
 .logo {
   font-size: 30px;
@@ -19,19 +18,5 @@
   font-weight: bolder;
 }
 .logo:hover {
-  cursor: pointer;
-}
-.button {
-  width: 130px;
-  height: 48px;
-  background-color: #007675;
-  border: none;
-  border-radius: 5px;
-  color: #ffffff;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
-  font-size: 20px;
-  font-weight: normal;
-}
-.button:hover {
   cursor: pointer;
 }

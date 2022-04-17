@@ -5,14 +5,19 @@
   align-items: center;
 }
 .icon-component > p {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   color: #000000;
   opacity: 50%;
+  text-align: center;
 }
 
 .icon-component:hover {
   cursor: pointer;
   /* width: 275px;
     height: 222px; */
+}
+.img{
+  width: 220px;
+  height: 220px;
 }

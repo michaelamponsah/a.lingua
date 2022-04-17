@@ -20,3 +20,12 @@
 .logo:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 414px) {
+  .wrapper{
+    max-width: 100%;
+  }
+  .navigation-items{
+    max-width: 100%;
+  }
+}

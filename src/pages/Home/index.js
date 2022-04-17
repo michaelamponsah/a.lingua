@@ -20,7 +20,7 @@ const Homepage = () => {
         <div className="container">
           <div className={classes["hero-section-main"]}>
             <div className={`row ${classes["section-row"]}`}>
-              <div className={`col`}>
+              <div className="col">
                 <div className={classes["left-side"]}>
                   <h1>Afro Lingua</h1>
                   <p>a new way of learning afro languages</p>
@@ -93,6 +93,71 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      <section className={classes["fourth-section"]}>
+        <div className="container">
+          <div className={classes["form-wrapper"]}>
+            <form className={classes["form"]}>
+              <div className="mb-3">
+                <label htmlFor="userEmail" className="form-label">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="userEmail"
+                  className={`form-control ${classes["input-field"]}`}
+                  name="userEmail"
+                  placeholder="yourname@exmaple.com"
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="userName" className="form-label">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="userName"
+                  className={`form-control ${classes["input-field"]}`}
+                  name="userName"
+                  placeholder="Your full name"
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="userCountry" className="form-label">
+                  Country
+                </label>
+                <input
+                  type="text"
+                  id="userCountry"
+                  className={`form-control ${classes["input-field"]}`}
+                  name="userCountry"
+                  placeholder="Your country of origin"
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="userLangPref" className="form-label">
+                  Language of Preference
+                </label>
+                <input
+                  type="text"
+                  id="userLangPref"
+                  className={`form-control ${classes["input-field"]}`}
+                  name="userLangPref"
+                  placeholder="Your language of preference"
+                />
+              </div>
+              <div className="mb-3">
+                <Button type="submit" otherStyles={{ width: "100%" }}>
+                  Submit
+                </Button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer className={classes.footer}>
+        <p>&copy; 2022 All Rights Reserved, a.lingua </p>
+        <p>Privacy Policy | Terms </p>
+      </footer>
     </React.Fragment>
   );
 };

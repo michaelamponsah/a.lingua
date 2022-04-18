@@ -12,8 +12,15 @@ import heroSVGImage from "../../assets/svg/HeroBg.svg";
 import thirdSectionSVGImage from "../../assets/svg/ThirdSection.svg";
 
 const Homepage = () => {
-  // const heroRightImage = require("../../assets/images/lady-on-yellow-bg.png");
-
+  const ctaClickHandler = (event) => {
+    event.preventDefault();
+    const target = event.target.getAttribute("href");
+    const location = document.querySelector(target).offsetTop;
+    window.scrollTo({
+      x: 0,
+      top: location - 80,
+    });
+  };
   return (
     <React.Fragment>
       <NavigationBar />
@@ -25,6 +32,7 @@ const Homepage = () => {
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}
+        id="hero-section"
       >
         <div className="container">
           <div className={classes["left-side-wrapper"]}>
@@ -35,13 +43,19 @@ const Homepage = () => {
                 of indigenous African languages
               </p>
               <div className={classes["btn-wrapper"]}>
-                <Button>We'd love to hear from you</Button>
+                <a
+                  href="#get-in-touch"
+                  className={classes["call-to-action"]}
+                  onClick={ctaClickHandler}
+                >
+                  We'd love to hear from you
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className={classes["second-section"]}>
+      <section className={classes["second-section"]} id="second-section">
         <div className={`container`}>
           <div className={classes["section-text-wrapper"]}>
             <p>
@@ -58,6 +72,7 @@ const Homepage = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
+        id="third-section"
       >
         <div className="container">
           <div className={classes["leading-text"]}>
@@ -100,7 +115,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section id="get-in-touch" className={classes["fourth-section"]}>
+      <section className={classes["fourth-section"]} id="get-in-touch">
         <div className="container">
           <div className={classes["form-wrapper"]}>
             <form className={classes["form"]}>
@@ -153,7 +168,10 @@ const Homepage = () => {
                 />
               </div>
               <div className="mb-3">
-                <Button type="submit" otherStyles={{ width: "100%", backgroundColor: "#0362A7" }}>
+                <Button
+                  type="submit"
+                  otherStyles={{ width: "100%", backgroundColor: "#0362A7" }}
+                >
                   Submit
                 </Button>
               </div>

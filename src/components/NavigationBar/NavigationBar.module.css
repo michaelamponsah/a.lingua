@@ -16,6 +16,7 @@
   font-size: 30px;
   color: #1434a4;
   font-weight: bolder;
+  text-decoration: none;
 }
 .logo:hover {
   cursor: pointer;

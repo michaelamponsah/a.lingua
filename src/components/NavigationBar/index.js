@@ -8,9 +8,9 @@ const NavigationBar = () => {
       <div className="container">
         <div className={classes["navigation-items"]}>
           <div className={classes["logo-wrapper"]}>
-            <span className={classes.logo}>a.lingua</span>
+            <a href="#" className={classes.logo}>a.lingua</a>
           </div>
-         <Button>Get started</Button>
+         <Button id="get-in-touch">Get started</Button>
         </div>
       </div>
     </nav>

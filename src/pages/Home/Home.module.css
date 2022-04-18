@@ -1,5 +1,5 @@
 /* Hero Section */
-.hero-section-wrapper {
+/*.hero-section-wrapper {
   box-sizing: border-box;
   min-width: 100%;
   min-height: 90vh;
@@ -47,8 +47,45 @@
   max-width: 400px;
   height: 470px;
 }
+*/
 
-/* Second Section */
+/* HERO SECTION */
+.hero-section-wrapper {
+  box-sizing: border-box;
+  min-width: 100%;
+  min-height: 100vh;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+.left-side-wrapper {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.left-side > h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  color: #1434a4;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.left-side > p {
+  font-size: 24px;
+  color: #1d262d;
+  font-weight: bold;
+  line-height: 2.2rem;
+  width: 100%;
+  word-break: break-all;
+}
+
+/* SECOND SECTION */
 .second-section {
   box-sizing: border-box;
   min-height: 40vh;
@@ -71,7 +108,7 @@
   font-size: 32px;
 }
 
-/* Third section */
+/* THIRD SECTION */
 .third-section {
   box-sizing: border-box;
   max-width: 100%;
@@ -90,7 +127,7 @@
   text-align: center;
   align-self: center;
   font-size: 32px;
-  color: #007675;
+  color: #ffffff;
 }
 .third-section .icons-wrapper {
   display: flex;
@@ -100,7 +137,7 @@
   box-sizing: border-box;
 }
 
-/* Fourth section */
+/* FOURTH SECTION */
 .fourth-section {
   min-height: 70vh;
   background-color: #d6eaf8;

@@ -8,34 +8,34 @@ import videoSVG from "../../assets/svg/Video.svg";
 import textSVG from "../../assets/svg/Text.svg";
 import audioSVG from "../../assets/svg/AudioWave.svg";
 import animationSVG from "../../assets/svg/Animation.svg";
+import heroSVGImage from "../../assets/svg/HeroBg.svg";
+import thirdSectionSVGImage from "../../assets/svg/ThirdSection.svg";
 
 const Homepage = () => {
-  const heroRightImage = require("../../assets/images/lady-on-yellow-bg.png");
-  // const videoSVG = require("../../assets/svg/Video.svg")
+  // const heroRightImage = require("../../assets/images/lady-on-yellow-bg.png");
 
   return (
     <React.Fragment>
       <NavigationBar />
-      <section className={classes["hero-section-wrapper"]}>
+      {/* Make an inline style untill a proper solution is found  for svg bg-image */}
+      <section
+        className={classes["hero-section-wrapper"]}
+        style={{
+          backgroundImage: `url(${heroSVGImage})`,
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="container">
-          <div className={classes["hero-section-main"]}>
-            <div className={`row ${classes["section-row"]}`}>
-              <div className="col">
-                <div className={classes["left-side"]}>
-                  <h1>Afro Lingua</h1>
-                  <p>a new way of learning afro languages</p>
-                  <div className={classes["btn-wrapper"]}>
-                    <Button>We'd love to hear from you</Button>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className={classes["right-side"]}>
-                  <img
-                    src={heroRightImage}
-                    alt="smiling lady with a smartphone"
-                  />
-                </div>
+          <div className={classes["left-side-wrapper"]}>
+            <div className={classes["left-side"]}>
+              <h1>Afro Lingua</h1>
+              <p>
+                Bridging the gap in the literacy <br />
+                of indigenous African languages
+              </p>
+              <div className={classes["btn-wrapper"]}>
+                <Button>We'd love to hear from you</Button>
               </div>
             </div>
           </div>
@@ -51,7 +51,14 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className={classes["third-section"]}>
+      <section
+        className={classes["third-section"]}
+        style={{
+          backgroundImage: `url(${thirdSectionSVGImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
         <div className="container">
           <div className={classes["leading-text"]}>
             <p>
@@ -93,7 +100,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className={classes["fourth-section"]}>
+      <section id="get-in-touch" className={classes["fourth-section"]}>
         <div className="container">
           <div className={classes["form-wrapper"]}>
             <form className={classes["form"]}>
@@ -146,7 +153,7 @@ const Homepage = () => {
                 />
               </div>
               <div className="mb-3">
-                <Button type="submit" otherStyles={{ width: "100%" }}>
+                <Button type="submit" otherStyles={{ width: "100%", backgroundColor: "#0362A7" }}>
                   Submit
                 </Button>
               </div>
